@@ -13,6 +13,6 @@ func main(){
     return
   }
   doc, err := goquery.NewDocumentFromReader(res.Body)
-  title := doc.Find(".dty_urunFiyati").Text()
-		fmt.Printf("Review: %s\n",title)
-	}
+  price := doc.Find(".dty_urunFiyati").Text()
+		fmt.Printf("Review: %s\n",price)
+}
